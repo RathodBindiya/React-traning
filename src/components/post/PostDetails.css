@@ -1,0 +1,50 @@
+.post-details {
+    margin: 50px auto;
+    width: 800px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .post-details h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .post-details p {
+    margin-bottom: 20px;
+  }
+  
+  .post-details .tags {
+    margin-top: 20px;
+  }
+  
+  .post-details .tags li {
+    display: inline-block;
+    background-color: #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+  }
+  
+  .post-details .reactions {
+    margin-top: 20px;
+  }
+  
+  .post-details .reactions span {
+    display: inline-block;
+    background-color: #ccc;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .post-details .reactions .likes {
+    background-color: #007bff;
+  }
+  
+  .post-details .reactions .dislikes {
+    background-color: #dc3545;
+  }
+  

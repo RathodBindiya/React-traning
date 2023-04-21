@@ -1,0 +1,109 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 10px;
+  height: 100%;
+}
+
+.header {
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: royalblue;
+}
+
+.name {
+  margin-top: 5px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #efefef;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  font-size: clamp(1rem, 1.2vw, 1.5rem); /* adjusts font-size based on viewport width */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* set the number of lines to be displayed */
+  overflow: hidden;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  padding: 20px;
+  grid-column: 2/3;
+}
+
+.grid-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+.postheader{
+  font-size: 24px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.pagination {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px; 
+}
+
+.prev,
+.next {
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #3e8e41;
+}
+
+.prev:disabled,
+.next:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
